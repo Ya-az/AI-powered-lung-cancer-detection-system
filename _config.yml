@@ -1,0 +1,29 @@
+# GitHub Pages Configuration
+
+# Site settings
+theme: jekyll-theme-cayman
+title: AI-Powered Lung Cancer Detection System
+description: Advanced medical imaging platform using Deep Learning to analyze chest X-rays for early lung cancer detection
+url: https://ya-az.github.io
+baseurl: /AI-powered-lung-cancer-detection-system
+
+# Build settings
+markdown: kramdown
+
+# Exclude files
+exclude:
+  - .venv/
+  - __pycache__/
+  - *.pyc
+  - .git/
+  - .gitignore
+  - requirements.txt
+  - requirements-dev.txt
+  - run.bat
+  - organize_project.ps1
+
+# Include files
+include:
+  - web/
+  - docs/
+  - README.md

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting to Web App...</title>
+    <meta http-equiv="refresh" content="0;url=web/index.html">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(145deg, #0f0a2e 0%, #1e1b4b 45%, #312e81 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+        }
+        .loader {
+            text-align: center;
+        }
+        .spinner {
+            width: 60px;
+            height: 60px;
+            border: 6px solid rgba(139, 92, 246, 0.3);
+            border-top: 6px solid #8b5cf6;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        h1 {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+        p {
+            color: #a1a1aa;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="loader">
+        <div class="spinner"></div>
+        <h1>Loading Lung Cancer Detection System...</h1>
+        <p>Redirecting to web application...</p>
+    </div>
+    <script>
+        // Fallback redirect after 2 seconds
+        setTimeout(() => {
+            window.location.href = 'web/index.html';
+        }, 2000);
+    </script>
+</body>
+</html>

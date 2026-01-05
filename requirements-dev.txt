@@ -1,0 +1,23 @@
+# ===== المكتبات الأساسية =====
+# مطلوب لجميع إصدارات التطبيق
+torch==2.0.1
+torchvision==0.15.2
+Pillow==10.0.0
+numpy==1.24.3
+streamlit==1.28.1
+scikit-learn==1.3.2
+scipy==1.11.4
+
+# ===== التصور والرسوم البيانية =====
+matplotlib==3.8.2
+seaborn==0.13.0
+pandas==2.1.4
+
+# ===== أدوات التطوير =====
+# لتثبيت أدوات التطوير، استخدم:
+# pip install -r requirements-dev.txt
+# pytest>=7.4.0
+# black>=23.0.0
+# flake8>=6.0.0
+# pylint>=2.17.0
+# isort>=5.12.0
