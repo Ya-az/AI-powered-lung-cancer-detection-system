@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <meta http-equiv="refresh" content="0;url=web/index.html">
+    <style>
+        body { margin:0; padding:0; display:flex; align-items:center; justify-content:center; min-height:100vh; background:#0f0a2e; color:#fff; font-family:Segoe UI, Tahoma, Geneva, Verdana, sans-serif; text-align:center; }
+        .box { max-width:360px; padding:24px; }
+        .spinner { width:56px; height:56px; border:6px solid rgba(139,92,246,0.3); border-top:6px solid #8b5cf6; border-radius:50%; margin:0 auto 16px; animation:spin 1s linear infinite; }
+        h1 { margin:0 0 8px; font-size:1.5rem; }
+        p { margin:0; color:#cbd5e1; }
+        @keyframes spin { 0% {transform:rotate(0deg);} 100% {transform:rotate(360deg);} }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="spinner"></div>
+        <h1>Redirecting...</h1>
+        <p>You will be sent to the app automatically.</p>
+    </div>
+    <script>
+        setTimeout(() => { window.location.href = 'web/index.html'; }, 500);
+    </script>
+</body>
+</html>
